@@ -1,0 +1,310 @@
+@media screen and (min-width: 1024px) {
+    #depositMethods .methodSquare {
+        flex-basis: 32%;
+        width: 32%;
+        max-width: 32%;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    #depositMethods .methodSquare {
+        flex-basis: 46%;
+        width: 46%;
+        max-width: 46%;
+        min-height: 100px;
+    }
+    #depositMethods .methodSquare .methodTitle {
+        font-size: 12px;
+    }
+    #depositMethods .methodSquare .paymentCategoryImage img {
+        height: 25px !important;
+    }
+    .depositMethodsOptions {
+        padding: 0px !important;
+    }
+    .depositMethodsOptions .methodOptionTitle {
+        padding: 0px !important;
+        font-size: 12px;
+    }
+}
+
+#depositMethods #methodSquareZM .methodSquareButton .paymentCategoryImage img {
+    height: 40px !important;
+}
+
+#depositMethods {
+    display: flex !important;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    color: #333;
+    position: relative;
+}
+
+#depositMethods .modal-body {
+    position: relative;
+}
+
+#depositMethods.slick-slider {
+    display: block !important;
+}
+
+#depositMethods .slick-arrow {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 50;
+}
+
+#depositMethods .slick-arrow.glyphicon-chevron-right {
+    right: 10px;
+}
+
+#depositMethods .slick-arrow.glyphicon-chevron-left {
+    left: 10px;
+}
+
+#depositMethods .slick-list {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    overflow-x: hidden;
+}
+
+#depositMethods .slick-list.slick-list.draggable:after {
+    content: "";
+    width: 60px;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2), #fff);
+    float: right;
+    position: absolute;
+    right: 0;
+    z-index: 45;
+    top: 0;
+}
+
+#depositMethods .slick-list.slick-list.draggable:before {
+    content: "";
+    width: 60px;
+    height: 100%;
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.2), #fff);
+    float: left;
+    position: absolute;
+    left: 0;
+    z-index: 45;
+    top: 0;
+}
+
+#depositMethods .methodSquare {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.4);
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 5px;
+    position: relative;
+}
+
+#depositMethods .methodSquare.slick-slide:not(.highlighted) {
+    filter: opacity(40%);
+    transition: ease all 0.3s;
+}
+
+#depositMethods .methodSquare .methodSquareButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center !important;
+}
+
+#depositMethods .methodSquare .methodSquareButton:hover {
+    cursor: pointer;
+}
+
+#depositMethods .methodSquare .methodSquareButton .methodTitle {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+#depositMethods .methodSquare .methodSquareButton .paymentCategoryImage img {
+    height: 30px !important;
+    width: auto;
+    margin-bottom: 5px;
+}
+
+#depositMethods .methodSquare .moreInfoButton {
+    position: absolute !important;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    height: 100%;
+    width: 30px;
+    position: relative;
+    z-index: 2147483646;
+}
+
+#depositMethods .methodSquare .moreInfoButton:before {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+#depositMethods .methodSquare.slick-slide:hover {
+    background-color: #fff !important;
+    color: #333 !important;
+}
+
+#depositMethods .methodSquare:hover {
+    cursor: pointer;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.6);
+    transition: ease all .4s;
+}
+
+#depositMethods .methodSquare .processingInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+#depositMethods .methodSquare .processingInfo span {
+    background: #439539;
+    color: #fff;
+    font-size: 8.5px;
+    border-radius: 4px;
+    padding: 3px 6px;
+    text-align: center;
+    margin: 0 5px;
+}
+
+#depositMethods .methodSquare .thresholds {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#depositMethods .methodSquare .thresholds span {
+    font-size: 10px;
+}
+
+#depositMethodsOptions {
+    padding: 10px;
+}
+
+#depositMethodsOptions .methodOption a {
+    color: #000000 !important;
+    font-weight: bold;
+}
+
+#depositMethodsOptions .methodOption .btn:not(.btn.btn-amounts) {
+    color: #ffffff !important;
+    border: 1px solid #439539;
+}
+
+#depositMethodsOptions .methodOption .btn:not(.btn.btn-amounts):hover {
+    background: #fff;
+    color: #439539 !important;
+    transition: ease all 0.3s;
+}
+
+#depositMethodsOptions .methodOption .methodOptionTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#depositMethodsOptions .methodOption .methodOptionTitle .methodTitle {
+    font-weight: bold;
+}
+
+#depositMethodsOptions .methodOption .methodOptionTitle #viewAllBtn,
+#depositMethodsOptions .methodOption .methodOptionTitle #moreInfoBtn {
+    background: #fff;
+    border: 1px solid #fff;
+    outline: none;
+    padding: 8px 12px;
+}
+
+#depositMethodsOptions .methodOption .methodOptionTitle #viewAllBtn:hover,
+#depositMethodsOptions .methodOption .methodOptionTitle #moreInfoBtn:hover {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#depositMethodsOptions .methodOption #notauth-form h3 {
+    text-align: center;
+}
+
+#depositMethodsOptions .thisContent {
+    margin: 0 auto !important;
+    width: 90% !important;
+    border: none !important;
+}
+
+#depositingModal .account-balance-field {
+    display: inline-block;
+    font-size: 12px;
+    width: calc(50% - 50px);
+    text-align: right;
+}
+
+#depositingModal .account-balance-field-amount {
+    display: inline-block;
+}
+
+#depositingModal .deposit-title-block {
+    width: 50%;
+    display: inline-block;
+}
+
+#depositingModal .modal-header {
+    background: #333;
+    color: #fff;
+    font-weight: bold;
+}
+
+#depositingModal .modal-header .modal-title {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#depositingModal .modal-header .close {
+    color: #fff !important;
+    text-shadow: none !important;
+    opacity: 1;
+}
+
+#depositingModal .swal2-container {
+    position: absolute;
+}
+
+#depositingModal .modal-body {
+    display: flex;
+    flex-direction: column;
+}
+
+#depositingModal .modal-body .scrollMore {
+    width: 100%;
+    position: absolute;
+    background-image: linear-gradient(to top, #fff, transparent);
+    height: 30px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#depositingModal .md-money {
+    font-size: 14px;
+    vertical-align: text-top;
+}
